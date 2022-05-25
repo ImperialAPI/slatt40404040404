@@ -18,21 +18,23 @@ body {
 h1 {
     margin: 0;
     font-family: 'Anton', sans-serif;
-    letter-spacing: 2pt;
+    letter-spacing: 0pt;
     font-style: italic;
     font-size: 30pt;
     font-weight: bold;
-    color: rgb(252, 0, 0);
+    color: rgb(255, 0, 0);
     animation: border-flicker 2s linear infinite;
 }
 
 p {
-    margin: 0;
-    letter-spacing: 0.4pt;
-    font-size: 9pt;
-    color: rgb(255, 0, 0);
-    font-weight: 500;
-    opacity: 0.4;
+    margin: 10;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0pt;
+    font-style: italic;
+    font-size: 12pt;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    animation: p 2s linear infinite;
 }
 
 span {
@@ -42,17 +44,28 @@ span {
 }
 
 span a {
-    text-decoration: none;
-    color: rgb(255, 0, 0);
-    margin: 0;
-    letter-spacing: 0.8pt;
-    font-size: 9pt;
-    color: rgb(255, 0, 0);
-    font-weight: 200;
-    opacity: 0.2;
-    transform: translateX(100%);
-    animation: my-animation 15s linear infinite;
-}
+    p {
+        margin: 10;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 0pt;
+        font-style: italic;
+        font-size: 12pt;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        animation: p 2s linear infinite;
+        }  
+    }
+    a {
+        margin: 10;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 0pt;
+        font-style: italic;
+        font-size: 12pt;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        animation: p 5s linear infinite;
+        }  
+    }
 
 @keyframes my-animation {
     from { -webkit-transform: translateX(100%); }
@@ -84,5 +97,33 @@ span a {
     100% {
         opacity:1;
         text-shadow: 0 0 10px rgb(212, 0, 0);
+    }
+}
+
+@keyframes p {
+    0% {
+        opacity:0.1;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    2% {
+        opacity:1;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    4% {
+        opacity:0.1;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    
+    8% {
+        opacity:1;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    70% {
+        opacity:0.7;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+    100% {
+        opacity:1;
+        text-shadow: 0 0 10px rgb(255, 255, 255);
     }
 }
